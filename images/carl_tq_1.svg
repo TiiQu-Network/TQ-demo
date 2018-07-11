@@ -162,7 +162,7 @@
 				/>
 			</g>
 			<g class="timeline_event_g" id="event_g20">
-				<a xlink:href="../step_6.html" target="_top">
+				<a xlink:href="../step_1.html" target="_top">
 					<path
 						onmouseover="showLabel(evt, 1)"
 						onmouseout="hideLabel(evt, 1)"
@@ -178,7 +178,7 @@
 				<text text-anchor="start" transform="translate(341.5, 35)" id="event_text_1" style="opacity:0;">---- Identity</text>
 			</g>
 			<g class="timeline_event_g" id="event_g21">
-				<a xlink:href="../step_6.html" target="_top">
+				<a xlink:href="../step_1.html" target="_top">
 					<path
 						onmouseover="showLabel(evt, 2)"
 						onmouseout="hideLabel(evt, 2)"
@@ -194,7 +194,7 @@
 				<text text-anchor="start" transform="translate(525, 125)" id="event_text_2" style="opacity:0;">---- Performance</text>
 			</g>
 			<g class="timeline_event_g" id="event_g22">
-				<a xlink:href="../step_6.html" target="_top">
+				<a xlink:href="../step_1.html" target="_top">
 					<path
 						onmouseover="showLabel(evt, 3)"
 						onmouseout="hideLabel(evt, 3)"
@@ -210,7 +210,7 @@
 				<text text-anchor="start" transform="translate(578.5, 260)" id="event_text_3" style="opacity:0;">---- Reputation</text>
 			</g>
 			<g class="timeline_event_g" id="event_g23">
-				<a xlink:href="../step_6.html" target="_top">
+				<a xlink:href="../step_1.html" target="_top">
 					<path
 							onmouseover="showLabel(evt, 4)"
 							onmouseout="hideLabel(evt, 4)"
