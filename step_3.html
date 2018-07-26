@@ -2,100 +2,257 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script defer src="js/fontawesome-all.min.js"></script>
     <link rel="stylesheet" href="css/highlight.min.js.css">
-    <style>
-        body {
-            background: #fff;
-            margin: 0;
-        }
-        #logo{
-            width: 200px;
-        }
-        .container{
-            font-family:monospace;
-            font-size: 20px;
-            color: #000;
-            text-align: center;
-
-            margin: 0 auto;
-            width: 80%
-        }
-        .next{
-            color: #000;
-        }
-        .header{
-            background:#111;
-            padding:20px;
-        }
-        .ref{
-            color: #444;
-        }
-    </style>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<div class="header"><img id="logo" src="images/logo.svg"/></div>
-<br/>
+<header class="navbar navbar-expand navbar-dark nav-tiiqu-header flex-column flex-md-row">
+    <img id="logo" src="images/logo_black.svg">
 
-<div class="container">
-    <h1><u>TiiQu Platform Overview</u></h1>
-    <h2>The TQ</h2>
+    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+        <li class="nav-item dropdown">
+            <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b>0x2c3c1f05187dba7a5f2dd47dca57281c4d4f183f</b>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+                <a style="background-color: #18E1C9" class="dropdown-item active" href="#">0x2c3c1f05187dba7a5f2dd47dca57281c4d4f183f</a>
+                <a class="dropdown-item" href="#">0x93567f05187dba7a5f2dd47dca57281c4d4f183f</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Main Network</a>
+                <a class="dropdown-item" href="#">Rinkby Test Net</a>
+                <a class="dropdown-item" href="#">Kovan Test Net</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link mr-md-2" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b><img height="24px" src="images/q_icon.png"> 350</b>
+            </a>
+        </li>
+    </ul>
 
-    <embed src="images/jen_tq.svg">
-    <img src="images/trust_quotient_algorithm.png"/>
-    <img src="images/trust_quotient_algorithm_TQ_tree.png"/>
+    <a class="btn btn-dark d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">
+        <i class="fas fa-user"></i>
+    </a>
+</header>
+<div class="container-fluid">
+    <div class="row">
 
-    <br style="clear: both">
-    <pre style="text-align: left; margin: 0 auto; width: 80%;">
-        <code class="json">
-{
-    "TQ":{
-        "Reputation":{
-            "TiiQu Rating":{
-                "Points":{
-                    "value_range_from":1,
-                    "value_range_to":5,
-                    "weight":98,
-                    "samples":10,
-                    "points":[
-                        {
-                            "value":1,
-                            "value_range_from":1,
-                            "value_range_to":5
-                        },
-                        {
-                            "value":4,
-                            "value_range_from":1,
-                            "value_range_to":5
-                        },
-                        {
-                            "value":5,
-                            "value_range_from":1,
-                            "value_range_to":5
-                        },
-                        "etc"
-                    ]
-                },
-                "Count":{
-                    "value":15,
-                    "value_range_from":1,
-                    "value_range_to":10000000,
-                    "weight":2
-                }
-            }
-        }
-    }
-}
-        </code>
-    </pre>
+        <!-- Side Nav -->
+        <div class="col-1">
+            <ul class="nav flex-column nav-pills" aria-orientation="vertical" style="font-size: 24px; text-align: center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"  style="background-color: #18E1C9;"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #18E1C9;"><i class="fas fa-comment-alt"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #18E1C9;"><i class="fas fa-calendar-check"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #18E1C9;"><i class="fas fa-sitemap"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #18E1C9;"><i class="fas fa-equals"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #18E1C9;"><i class="fas fa-thumbs-up"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <br/>
+            <h2 class="text-center">Profile</h2>
+            <br/>
+            <div class="row">
+                <div class="col-6">
+                    <h5 class="text-center">Average Hourly Rate</h5>
+                    <img class="rounded-circle shadow" src="holder.js/200x200?bg=18E1C9&fg=ffffff&text=£75&size=24">
+                </div>
+                <div class="col-6">
+                    <h5 class="text-center">Trust Quotient</h5>
+                    <img style="width:100%;" class="rounded-circle shadow" src="holder.js/200x200?bg=18E1C9&fg=ffffff&text=TQ 675&size=24">
+                </div>
+            </div>
+
+            <br/>
+            <br/>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Carl Bobsman</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h4>Consultant Mathematician</h4>
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="jumbotron">
+                        <ul>
+                            <li>Approximation Algorithms</li>
+                            <li>Mathematical Modeling</li>
+                            <li>Numerical Analysis</li>
+                            <li>Ethereal Physics</li>
+                        </ul>
+                        <p>
+                            Experienced data modeller specialising in advanced statistical techniques.
+                            Extensive background in risk analysis and in depth understanding of financial models.
+                            Subject expertise includes developing and implementing scoring solutions, medical risk analysis and data mining.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center" style="font-size: 24px">
+                <div class="col-3">
+                    <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="text-dark"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="text-dark"><i class="far fa-bookmark"></i></a>
+                </div>
+            </div>
 
 
-    <a class="ref" href="https://github.com/TiiQu-Network/TiiQu-Network/wiki/The-Trust-Quotient-(TQ)">White Paper Details ></a>
+        </div>
+        <div class="col-8">
+            <br/>
+            <h2 class="text-center">Verify Your Claim</h2>
+            <h3 class="text-tiiqu text-center"><i class="fas fa-certificate"></i> Degree from Northumbria At Newcastle</h3>
 
-    <a class="next" href="step_4.html"><h1>Q ></h1></a>
+            <br/>
+            <div class="row">
+                <div class="col-12">
+                    <h1>Verification Success</h1>
+
+                    <div class="alert alert-success" role="alert">
+                        <b><i class="fas fa-check"></i> Success!</b> the given document has been verified as an authentic degree with the following detail:
+                    </div>
+
+                    <h2>Degree Data</h2>
+
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>Carl Gibbons</td>
+                        </tr>
+                        <tr>
+                            <td>Issuer</td>
+                            <td>University of Northumbria at Newcastle</td>
+                        </tr>
+                        <tr>
+                            <td>Degree Type</td>
+                            <td>MASTER of ENGINEERING</td>
+                        </tr>
+                        <tr>
+                            <td>Degree Grade</td>
+                            <td>SECOND CLASS HONOURS (upper division)</td>
+                        </tr>
+                        <tr>
+                            <td>Degree Speciality</td>
+                            <td>Biomedical Technology</td>
+                        </tr>
+                        <tr>
+                            <td>Issue Date</td>
+                            <td>20th July 2017</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div>
+                        <h3>Data Hash</h3>
+                        <pre>
+                            <code>
+    8E35C2CD3BF6641BDB0E2050B76932CBB2E6034A0DDACC1D9BEA82A6BA57F7CF
+                            </code>
+                        </pre>
+
+                        <h3>Merkle Receipt</h3>
+                        <pre>
+                            <code>
+    CA978112CA1BBDCAFAC231B39A23DC4DA786EFF8147C4E72B9807785AFEE48BB
+    3E23E8160039594A33894F6564E1B1348BBD7A0088D42C4ACB73EEAED59C009D
+    2E7D2C03A9507AE265ECF5B5356885A53393A2029D241394997265A1A25AEFC6
+    18AC3E7343F016890C510E93F935261169D9E3F565436429830FAF0934F4F8E4
+    3F79BB7B435B05321651DAEFD374CDC681DC06FAA65E374E38337B88CA046DEA
+    252F10C83610EBCA1A059C0BAE8255EBA2F95BE4D1D7BCFA89D7248A82D9F111
+                            </code>
+                        </pre>
+
+                        <h3>Merkle Root</h3>
+                        <pre>
+                            <code>
+    AAA9402664F1A41F40EBBC52C9993EB66AEB366602958FDFAA283B71E64DB123
+                            </code>
+                        </pre>
+
+                        <h3>Contract Address</h3>
+                        <pre>
+                            <code>
+    0xa74476443119A942dE498590Fe1f2454d7D4aC0d
+                            </code>
+                        </pre>
+
+                        <h3>Transaction Hash</h3>
+                        <a href="etherscan/index.html">View on Etherscan</a>
+                        <pre>
+                            <code>
+    0xa78b1503d6399ca22d10d4f5b828ec55d0a66a55b11c9ce885d4e817f8e375df
+                            </code>
+                        </pre>
+                    </div>
+
+                    <br/>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a class="btn btn-success" href="step_2.html">Back to your profile</a>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a class="btn btn-info" href="step_4.pdf">View Degree Document</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1">
+                <p>&copy; TiiQu Ltd 2018</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/holder.min.js"></script>
 
 <script src="js/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
 </body>
 </html>
